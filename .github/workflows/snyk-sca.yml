@@ -19,6 +19,7 @@ jobs:
 
       - name: Install Dependencies
         run: npm install --legacy-peer-deps --force
+        continue-on-error: true
 
       - name: Snyk SCA Scan
         uses: snyk/actions/node@master
